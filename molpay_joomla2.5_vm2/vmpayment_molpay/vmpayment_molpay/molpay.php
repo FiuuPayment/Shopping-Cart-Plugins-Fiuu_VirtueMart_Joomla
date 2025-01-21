@@ -1,9 +1,9 @@
 <?php
 /**
- * MOLPay VirtueMart Plugin
+ * Fiuu VirtueMart Plugin
  * 
  * @package Payment Gateway
- * @author MOLPay Technical Team <technical@molpay.com>
+ * @author Fiuu Technical Team <technical@fiuu.com>
  * @version 2.0.0
  */
 defined('_JEXEC') or die('Direct Access to ' . basename(__FILE__) . ' is not allowed.');
@@ -95,7 +95,7 @@ class plgVMPaymentMolpay extends vmPSPlugin {
         $dbs->setQuery($martquery);
         $martname = $dbs->loadResult();
         
-        //data need to send to molpay
+        //data need to send to fiuu
         $testReq = $method->debug == 1 ? 'YES' : 'NO';
         $post_variables = Array(
             'vcode' => $vcode,
@@ -124,7 +124,7 @@ class plgVMPaymentMolpay extends vmPSPlugin {
         
         // add spin image
         $html .= '<form action="https://www.onlinepayment.com.my/NBepay/pay/'.$method->molpay_merchantid.'/index.php" method="post" name="vm_molpay_form" >';
-        $html .= '<input type="image" name="submit" alt="Click to pay with MOLPay!" />';
+        $html .= '<input type="image" name="submit" alt="Click to pay with Fiuu!" />';
         
         foreach ($post_variables as $name => $value) {
             $html .= '<input type="hidden" name="' . $name . '" value="' . htmlspecialchars($value) . '" />';

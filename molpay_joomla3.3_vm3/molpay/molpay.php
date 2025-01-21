@@ -3,12 +3,12 @@
  *
  * MOLPay payment plugin
  *
- * @author MOLPay Teams
- * @author MOLPay Teams
+ * @author Fiuu Teams
+ * @author Fiuu Teams
  * @version $Id: molpay.php 5427 2014-12-30 01:12:00 $
  * @package VirtueMart
  * @subpackage payment
- * Copyright (C) 2011 - 2014 MOLPay Team. All rights reserved.
+ * Copyright (C) 2011 - 2024 Fiuu Team. All rights reserved.
  * @license http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
  * VirtueMart is free software. This version may have been modified pursuant
  * to the GNU General Public License, and as distributed it includes or
@@ -153,7 +153,7 @@ class plgVMPaymentMolpay extends vmPSPlugin
 		
 		// add spin image
 		$html = '<form action="https://www.onlinepayment.com.my/MOLPay/pay/'.$method->molpay_merchantid.'/index.php" method="post" name="vm_molpay_form" >';
-		$html.= '<input type="image" name="submit" alt="Click to pay with MOLPay!" />';
+		$html.= '<input type="image" name="submit" alt="Click to pay with Fiuu!" />';
 		foreach ($post_variables as $name => $value) 
 		{
 			$html.= '<input type="hidden" name="' . $name . '" value="' . htmlspecialchars($value) . '" />';
@@ -547,7 +547,7 @@ class plgVMPaymentMolpay extends vmPSPlugin
 	 * Create the table for this plugin if it does not yet exist.
 	 * This functions checks if the called plugin is active one.
 	 * When yes it is calling the standard method to create the tables
-	 * @author Valérie Isaksen
+	 * @author Valï¿½rie Isaksen
 	 *
 	 */
 	function plgVmOnStoreInstallPaymentPluginTable($jplugin_id) {
@@ -559,7 +559,7 @@ class plgVMPaymentMolpay extends vmPSPlugin
 	 * additional payment info in the cart.
 	 *
 	 * @author Max Milbers
-	 * @author Valérie isaksen
+	 * @author Valï¿½rie isaksen
 	 *
 	 * @param VirtueMartCart $cart: the actual cart
 	 * @return null if the payment was not selected, true if the data is valid, error message if the data is not vlaid

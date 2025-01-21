@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
-	<name>MOLPay - Leading Payment Gateway in Southeast Asia</name>
+	<name>Fiuu - Leading Payment Gateway in Southeast Asia</name>
 	<creationDate>December 30 2014</creationDate>
-	<author>The MOLPay Development Team</author>
-	<authorUrl>http://molpay.com</authorUrl>
-	<copyright>Copyright (C) 2011 - 2014 MOLPay Team. All rights reserved.</copyright>
+	<author>The Fiuu Development Team</author>
+	<authorUrl>http://fiuu.com</authorUrl>
+	<copyright>Copyright (C) 2011 - 2024 Fiuu Team. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
 	<version>3.0.2</version>
-	<description>MOLPay | The leading payment gateway in South East Asia Grow your business with MOLPay payment solutions &amp; free features: Physical Payment at 7-Eleven, Seamless Checkout, Tokenization, Loyalty Program and more</description>
+	<description>Fiuu | The leading payment gateway in South East Asia Grow your business with Fiuu payment solutions &amp; free features: Physical Payment at 7-Eleven, Seamless Checkout, Tokenization, Loyalty Program and more</description>
 
 	<files>
 		<filename plugin="molpay">molpay.php</filename>

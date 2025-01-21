@@ -1,25 +1,50 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<install version="1.0" type="plugin" group="vmpayment" >
-    <name>VMPAYMENT_MOLPAY</name>
-    <creationDate>Feb 2012</creationDate>
-    <author>MOLPay Development Team</author>
-    <authorUrl>http://www.molpay.com</authorUrl>
-    <copyright>Copyright (C) 2012 MOLPay Team. All rights reserved.</copyright>
-    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
-    <version>1.0</version>
-    <description>MOLPay payment plugin</description>
-    <languages>
-	<language tag="en-GB">en-GB.plg_vmpayment_molpay.ini</language>
-    </languages>
-    <files>
-	<filename plugin="molpay">molpay.php</filename>
-    </files>
-    <params addpath="/administrator/components/com_virtuemart/elements">
-	<param type="vmjpluginwarning" />
-	<param name="molpay_merchantid" type="text" label="MOLPay Merchant ID" description="VMPAYMENT_MOLPAY_MERCHANTID_EXPLAIN" />
-	<param name="molpay_verifykey" type="text" label="MOLPay Verify Key" description="VMPAYMENT_MOLPAY_VERIFYKEY_EXPLAIN" />
-    <param name="status_pending" type="vmorderstate" scope="com_virtuemart" default="P" label="VMPAYMENT_MOLPAY_STATUS_PENDING" description="VMPAYMENT_MOLPAY_STATUS_PENDING_EXPLAIN" />
-	<param name="status_success" type="vmorderstate" scope="com_virtuemart" default="C" label="VMPAYMENT_MOLPAY_STATUS_SUCCESS" description="VMPAYMENT_MOLPAY_STATUS_SUCCESS_EXPLAIN" />
-	<param name="status_canceled" type="vmorderstate" scope="com_virtuemart" default="X" label="VMPAYMENT_MOLPAY_STATUS_FAILED" description="VMPAYMENT_MOLPAY_STATUS_FAILED_EXPLAIN" />
-	</params>
-</install>
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<install version="1.0" type="plugin" group="vmpayment" >
+
+    <name>VMPAYMENT_MOLPAY</name>
+
+    <creationDate>Feb 2012</creationDate>
+
+    <author>Fiuu Development Team</author>
+
+    <authorUrl>http://www.fiuu.com</authorUrl>
+
+    <copyright>Copyright (C) 2024 Fiuu Team. All rights reserved.</copyright>
+
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+
+    <version>1.0</version>
+
+    <description>Fiuu payment plugin</description>
+
+    <languages>
+
+	<language tag="en-GB">en-GB.plg_vmpayment_molpay.ini</language>
+
+    </languages>
+
+    <files>
+
+	<filename plugin="molpay">molpay.php</filename>
+
+    </files>
+
+    <params addpath="/administrator/components/com_virtuemart/elements">
+
+	<param type="vmjpluginwarning" />
+
+	<param name="molpay_merchantid" type="text" label="MOLPay Merchant ID" description="VMPAYMENT_MOLPAY_MERCHANTID_EXPLAIN" />
+
+	<param name="molpay_verifykey" type="text" label="MOLPay Verify Key" description="VMPAYMENT_MOLPAY_VERIFYKEY_EXPLAIN" />
+
+    <param name="status_pending" type="vmorderstate" scope="com_virtuemart" default="P" label="VMPAYMENT_MOLPAY_STATUS_PENDING" description="VMPAYMENT_MOLPAY_STATUS_PENDING_EXPLAIN" />
+
+	<param name="status_success" type="vmorderstate" scope="com_virtuemart" default="C" label="VMPAYMENT_MOLPAY_STATUS_SUCCESS" description="VMPAYMENT_MOLPAY_STATUS_SUCCESS_EXPLAIN" />
+
+	<param name="status_canceled" type="vmorderstate" scope="com_virtuemart" default="X" label="VMPAYMENT_MOLPAY_STATUS_FAILED" description="VMPAYMENT_MOLPAY_STATUS_FAILED_EXPLAIN" />
+
+	</params>
+
+</install>
+

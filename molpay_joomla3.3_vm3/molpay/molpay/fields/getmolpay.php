@@ -1,6 +1,6 @@
 <?php
 /**
- *
+ * 
  * Realex payment plugin
  *
  * @author Valerie Isaksen
@@ -30,12 +30,15 @@ class JFormFieldGetPaypal extends JFormField {
 	 */
 	var $type = 'getMOLPay';
 
+
+	//Deprecated Code - 7/19/2024
+
 	protected function getInput() {
 
 		JHtml::_('behavior.colorpicker');
-
+		
 		$url = "http://www.molpay.com/v2/contact/merchant-enquiry";
-		$logo = '<img src="http://www.molpay.com/v2/images/logo/molpay-logo-400x160-transparent-24bit.png" />';
+		$logo = '<img src="http://.com/v2/images/logo/molpay-logo-400x160-transparent-24bit.png" />';
 		$html = '<p><a target="_blank" href="' . $url . '"  >' . $logo . '</a></p>';
 		$html .= '<p><a target="_blank" href="' . $url . '" class="signin-button-link">SIGN UP NOW</a>';
 		$html .= ' <a target="_blank" href="https://github.com/MOLPay" class="signin-button-link">Visit Our GitHub</a></p>';
